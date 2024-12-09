@@ -1,0 +1,42 @@
+/* @font-face{
+    font-family: Bodo;
+    src: url(/fonts/BodoniFLF-Bold.ttf);
+}
+
+
+.navbar a{
+    color:burlywood;
+    font-family: Bodo;
+}
+
+
+
+.navbar a:hover{
+    color: bisque;
+}
+
+.logo{
+    font-family: Bodo;
+    font-size: 40px;
+    color: bisque;
+ 
+}
+
+.intro{
+    background-image: url(/Images/bookshelves.jpg); height: 12em; width: 100%; background-position: 10%;    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+} */
+
+/* BOOK DISPLAY */
+
+.books-section .book-grid.book-card {
+    margin-top: 20%;
+    background-color: bisque;
+}
+
+

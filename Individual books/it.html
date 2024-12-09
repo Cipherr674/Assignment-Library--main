@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sixofcrows.css">
+</head>
+<style>
+
+</style>
+<body >
+<header>
+        <nav class="navbar navbar-expand-lg h-20 bg- bg-black ">
+            <div class="container-fluid navbar1">
+              <a class="navbar-brand logo" href="/index.html" style="transform: none; font-size: 35px;">Library</a>
+              <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto navbar" >
+                <ul class="navbar-nav gap-4 me-5">
+                  <li class="nav-item">
+                    <a class="nav-link " href="/loginform1.html">Login</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/signup/signupform.html">Signup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/BookPage/bookpage.html">Books</a>
+                  </li> 
+                </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+  </head>
+</header>
+
+    <style>
+        @font-face{
+    font-family: Bodo;
+    src: url(/fonts/BodoniFLF-Bold.ttf);
+}
+
+
+.navbar a{
+    color:burlywood;
+    font-family: Bodo;
+}
+
+
+
+.navbar a{
+    color:burlywood;
+    font-family: Bodo;
+    transition: all 0.2s ease;
+}
+
+
+
+.navbar a:hover{
+    color: bisque;
+    transform: scale(2.05);
+}
+
+
+
+        
+        body {
+            background-color: rgb(0, 0, 0);
+            color: black;
+            font-family: 'Arial', sans-serif;
+            background-image: url(/Books/Mysteries/wp1888879.jpg);
+            background-size:cover;
+        }
+        
+        .book-container {
+            background-color: rgb(0, 0, 0);
+            border: 10px solid burlywood;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 50px;
+            padding: 30px;
+        }
+        
+        .book-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        .book-description {
+            padding-left: 30px;
+        }
+        
+        .similar-books {
+            margin-top: 30px;
+            background-color: rgba(0,0,0,0.05);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .similar-book-card {
+            background-color: white;
+            border: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .similar-book-img {
+            max-width: 80px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .book-description {
+    color: bisque;
+        }
+
+.book-description h1{
+    color: rgb(255, 255, 255);
+}
+.book-description h4, 
+.book-description h5 {
+    color: rgb(255, 255, 255);
+}
+
+.book-description p {
+    color: rgb(243, 243, 243);
+}
+
+.binfo{
+    color: aliceblue;
+}
+
+/* Similar Books Section */
+.similar-books {
+    margin-top: 2rem;
+    background-color: rgba(0,0,0,0.6);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.similar-book-card {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid burlywood;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    
+}
+
+
+.similar-book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+}
+
+.similar-book-img {
+    max-width: 80px;
+    margin-right: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.similar-book-card:hover .similar-book-img {
+    transform: scale(1.1);
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+}
+.similar-books{
+    color: rgb(250, 250, 250);
+}
+.container1:hover{
+            transform: scale(1.05);  
+        }
+
+        .container1{
+            transition: all 0.3s ease
+        }
+
+
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .book-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-image {
+        max-height: 500px;
+        margin-bottom: 1.5rem;
+    }
+
+    .book-description {
+        padding: 0;
+    }
+
+    .similar-book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .similar-book-img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+    .book-container {
+        padding: 1rem;
+        border-width: 5px;
+    }
+
+    .book-description h1 {
+        font-size: 2rem;
+    }
+}
+
+ </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row book-container">
+            <!-- Book Image Section -->
+            <div class="col-md-5">
+                <img src="/Books/Mysteries/itfinal.jpg" style="height: 650px;"  alt="Book Cover" class="book-image">
+            </div>
+            
+            <!-- Book Description Section -->
+            <div class="col-md-7 book-description">
+                <div class="container1 p-3" style="background-color: burlywood; border-radius: 20px; color: white;">
+                <h1>IT</h1>
+                <h4 >Stephen King</h4>
+                
+                <div class="mt-4">
+
+                    <h5 class="text-white">Book Description</h5>
+                    <p>
+                        "IT" by Stephen King is a chilling horror masterpiece that follows a group of childhood friends, the Losers' Club, as they face off against an ancient, shape-shifting entity that takes the form of Pennywise the Dancing Clown. Set in the town of Derry, Maine, the story alternates between their childhood and adult lives as they reunite to confront the sinister force that terrorized them decades ago. Packed with suspense, friendship, and fear, IT explores the enduring power of courage and unity in the face of unimaginable evil.
+                    </p>
+                    
+                    <div class="mt-4 binfo ">
+                        <strong>Genre:</strong>Horror, Thriller, Mystery
+                        <br>
+                        <strong>Pages:</strong>1,138 (depends on edition)
+                        <br>
+                        <strong>Published:</strong>September 15, 1986
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Similar Books Section -->
+            <div class="col-12 similar-books">
+                <h4>Similar Books You Might Enjoy</h4>
+                <div class="row">
+                    <div class="col-md-6 similar-book-card">
+                        <img src="/Books/Fantasy/feature for IT.jpg" alt="Similar Book 1" class="similar-book-img">
+                        <div>
+                            <h6>Coraline</h6>
+                            <p class="text-white mb-0">Neil Gaiman</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 similar-book-card">
+                        <img src="/Books/Fantasy/feature for IT2.jpg" alt="Similar Book 2" class="similar-book-img">
+                        <div>
+                            <h6>The Great Gatsby</h6>
+                            <p class="text-white mb-0">By F Scott Fitzgerald</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
